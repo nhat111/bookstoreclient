@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>signin</title>
+</head>
+<body>
+<form >
+		<h2> {{users.lastName}} {{users.firstName}}</h2>
+		<p>
+			<label for="uname" class="floatLabel">Username</label>
+			<input id="uname" name="userName" type="text" value= {{users.userName}}>
+		</p>
+		
+		<p>
+			<label for="fname" class="floatLabel">First Name</label>
+			<input id="fname" name="firstName" type="text" value={{users.firstName}}>
+		</p>
+		<p>
+			<label for="lname" class="floatLabel">Last Name</label>
+			<input id="lname" name="lasttName" type="text"value={{users.lastName}}>
+		<p>
+			<label for="lname" class="floatLabel">Birthday</label>
+			<input id="lname" name="birthDay" type="text"value={{users.birthDay}}>
+		</p>
+		<p>
+			<label for="gender" class="floatLabel">Gender</label>
+			<input id="gender" name="gender" type="text"  value={{users.gender}}>
+		</p>
+		<p>
+			<label for="adres" class="floatLabel">Address</label>
+			<input id="adres" name="address" type="text" value={{users.address}}>
+		</p>
+	</form>
+</body>
+</html>

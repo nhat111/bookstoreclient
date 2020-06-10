@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="ISO-8859-1">
+  <title>signin</title>
+</head>
+<body>
+  <form action="#" method="post">
+    <h2>Login</h2>
+    <p>
+      <label for="uname" class="floatLabel">Username</label>
+      <input type="text" [(ngModel)] = "form.userName" name="uname" required>
+    </p>
+    <p>
+      <label for="password" class="floatLabel">Password</label>
+      <input [(ngModel)] ="form.password" type="password"  name="psw" required>
+      <span style="display: none;"> password at least 8 digit, has at least 1 special character</span>
+    </p>
+    <p>
+      <button type="submit" (click)="doLogin()">Login</button>
+    </p>
+  </form>
+
+</body>
+</html>

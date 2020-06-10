@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>signup</title>
+</head>
+<body>
+	<form action="#" method="post">
+		<h2>Sign Up</h2>
+		<p>
+			<label for="uname" class="floatLabel">Username</label>
+			<input type="text" [(ngModel)] = "form.userName" name="uname" required>
+
+		</p>
+		<p>
+			<label for="password" class="floatLabel">Password</label>
+			<input [(ngModel)] ="form.password" type="password" name="psw" required>
+			<span style="display: none;"> password at least 8 digit, has at least 1 special character</span>
+		</p>
+		<p>
+			<label for="fname" class="floatLabel">First Name</label>
+			<input type="text"  [(ngModel)] ="form.firstName" name="fname" required>
+
+		</p>
+		<p>
+			<label for="lname" class="floatLabel">Last Name</label>
+			<input type="text"  [(ngModel)] ="form.lastName" name="lname" required>
+
+		</p>
+		<p>
+			<label for="bday" class="floatLabel">Birthday</label>
+			<input type="text"  [(ngModel)] ="form.birthDay"  name="bday" required>
+			<p>
+				<label for="gender" class="floatLabel">Gender</label>
+				<input type="text"  [(ngModel)] ="form.gender"  name="gdr" required>
+
+			</p>
+			<p>
+				<label for="adres" class="floatLabel">Address</label>
+				<input type="text"  [(ngModel)] ="form.address"  name="adr" required>
+				<!--<input id="adres" name="address" type="text">-->
+			</p>
+			<p>
+				<button type="submit" (click)="doRegister()">Sign Up</button>
+				<!--<input type="submit" name="Sign Up" (click)="doRegister()">-->
+			</p>
+		</form>
+	</body>
+	</html>
